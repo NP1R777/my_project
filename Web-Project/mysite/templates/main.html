@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore — Компьютерная техника</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">Tech<span>Store</span></a>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#categories">Категории</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Поиск техники...">
+            <button>Найти</button>
+        </div>
+        <a href="#" class="cart">🛒 Корзина (0)</a>
+    </div>
+</header>
+
+<!-- БАННЕР -->
+<section class="hero">
+    <div class="container">
+        <h1>Новейшая <span>компьютерная</span> техника</h1>
+        <p>Ноутбуки, ПК, комплектующие и аксессуары по лучшим ценам</p>
+        <a href="#products" class="btn">Смотреть каталог</a>
+    </div>
+</section>
+
+<!-- КАТЕГОРИИ -->
+<section class="section" id="categories">
+    <div class="container">
+        <h2 class="section-title">Категории <span>товаров</span></h2>
+        <div class="categories">
+            <a href="#" class="category-card">
+                <div class="category-icon">💻</div>
+                <h3>Ноутбуки</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-icon">🖥️</div>
+                <h3>Компьютеры</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-icon">⚙️</div>
+                <h3>Комплектующие</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-icon">🖱️</div>
+                <h3>Аксессуары</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-icon">🖨️</div>
+                <h3>Периферия</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-icon">📱</div>
+                <h3>Гаджеты</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ТОВАРЫ -->
+<section class="section section-products" id="products">
+    <div class="container">
+        <h2 class="section-title">Хиты <span>продаж</span></h2>
+        <div class="products">
+
+            <div class="product-card">
+                <div class="product-image">💻</div>
+                <div class="product-info">
+                    <h3>Ноутбук UltraBook Pro 15</h3>
+                    <p class="product-desc">Intel Core i7, 16 ГБ RAM, SSD 512 ГБ, 15.6" FullHD</p>
+                    <div class="product-bottom">
+                        <span class="price">79 990 ₽</span>
+                        <button class="buy-btn" onclick="addToCart(this)">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🖥️</div>
+                <div class="product-info">
+                    <h3>Игровой ПК GamerX</h3>
+                    <p class="product-desc">Ryzen 7, RTX 4060, 32 ГБ RAM, SSD 1 ТБ</p>
+                    <div class="product-bottom">
+                        <span class="price">119 990 ₽</span>
+                        <button class="buy-btn" onclick="addToCart(this)">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">⚙️</div>
+                <div class="product-info">
+                    <h3>Видеокарта RTX 4070</h3>
+                    <p class="product-desc">12 ГБ GDDR6X, 192-bit, PCI-E 4.0</p>
+                    <div class="product-bottom">
+                        <span class="price">64 990 ₽</span>
+                        <button class="buy-btn" onclick="addToCart(this)">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🖱️</div>
+                <div class="product-info">
+                    <h3>Мышь Logitech G Pro</h3>
+                    <p class="product-desc">Беспроводная, 25600 DPI, сенсор HERO 25K</p>
+                    <div class="product-bottom">
+                        <span class="price">6 990 ₽</span>
+                        <button class="buy-btn" onclick="addToCart(this)">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-info">
+                    <h3>Клавиатура Mech RGB</h3>
+                    <p class="product-desc">Механическая, переключатели Red, RGB-подсветка</p>
+                    <div class="product-bottom">
+                        <span class="price">4 490 ₽</span>
+                        <button class="buy-btn" onclick="addToCart(this)">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🖨️</div>
+                <div class="product-info">
+                    <h3>Монитор 27" 2K IPS</h3>
+                    <p class="product-desc">2560×1440, 165 Гц, HDR, IPS-матрица</p>
+                    <div class="product-bottom">
+                        <span class="price">24 990 ₽</span>
+                        <button class="buy-btn" onclick="addToCart(this)">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="section features">
+    <div class="container">
+        <h2 class="section-title">Почему <span>мы</span>?</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">🚚</div>
+                <h3>Быстрая доставка</h3>
+                <p>Доставка по всей России за 1–3 дня</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <h3>Гарантия качества</h3>
+                <p>Официальная гарантия до 3 лет на всю технику</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <h3>Лучшие цены</h3>
+                <p>Гарантия низкой цены и регулярные скидки</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔧</div>
+                <h3>Сервис и поддержка</h3>
+                <p>Профессиональная помощь в выборе и настройке</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ПОДВАЛ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>TechStore</h4>
+                <p class="footer-about">Магазин компьютерной техники с 2010 года.</p>
+            </div>
+            <div>
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Возврат</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Компания</h4>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <ul>
+                    <li><a href="tel:+78001234567">📞 8 (800) 123-45-67</a></li>
+                    <li><a href="mailto:info@techstore.ru">✉️ info@techstore.ru</a></li>
+                    <li>📍 Москва, ул. Техническая, 15</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 TechStore. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<script>
+    let cartCount = 0;
+
+    function addToCart(button) {
+        cartCount++;
+        document.querySelector('.cart').textContent = `🛒 Корзина (${cartCount})`;
+        button.textContent = '✓ Добавлено';
+        button.style.background = '#4caf50';
+        button.style.color = '#fff';
+        setTimeout(() => {
+            button.textContent = 'Купить';
+            button.style.background = '';
+            button.style.color = '';
+        }, 1500);
+    }
+</script>
+</body>
+</html>
